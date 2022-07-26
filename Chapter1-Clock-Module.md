@@ -8,3 +8,5 @@ The computer’s clock is used to synchronize all operations.
 This clock is based on the popular 555 timer IC.
 
 The clock is adjustable-speed (from less than 1Hz to a few hundred Hz). The clock can also be put into a manual mode where you push a button to advance each clock cycle. This will be a really useful feature for debugging the computer later on.
+
+![Image 4](https://user-images.githubusercontent.com/24626396/181102423-eb7ff0f3-c349-4de2-b6a5-b051dea38f89.jpeg)
