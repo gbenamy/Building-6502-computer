@@ -10,5 +10,7 @@ I'll be following Ben Eater's youtube [playlist](https://www.youtube.com/watch?v
 
 6502 micro processor, ![6502](https://assets.rebelmouse.io/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpbWFnZSI6Imh0dHBzOi8vYXNzZXRzLnJibC5tcy8yNTYyODU5MS9vcmlnaW4uanBnIiwiZXhwaXJlc19hdCI6MTY4MTM0MzA0Nn0.HDnx8pVZ9E312XUsN1hn1_0vDQ4DWunPXDjNpNwpqT0/img.jpg?width=980) the classic micro processor that started the pesonal computer revolution with the tremendous apple II computer ![appleII](https://images.all-free-download.com/images/graphiclarge/apple_ii_564638.jpg)
 
- The **purpose** of this project to me is to gain a deeper understanding on computer internals from top to buttom and eliminate the "magic" 
-
+ > The **purpose** of this project to me is to gain a deeper  understanding on computer internals from top to buttom and eliminate the =="magic"== 
+------
+## unboxing!
+pretty exiting :-)
