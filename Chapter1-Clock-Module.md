@@ -30,3 +30,14 @@ from the data sheet:
 ![Screen Shot 2022-07-31 at 11 19 15](https://user-images.githubusercontent.com/24626396/182017112-2332940f-da9b-48ac-b9a1-3e80cf21e467.png)
 
 ## Inside 555
+
+I'll simulate the 555 component circuitary to show it's inner behaviur:
+### schematics:
+![Screenshot 2022-12-09 at 12 11 50](https://user-images.githubusercontent.com/24626396/206679648-91a858e8-b57b-4aad-b958-c37ae37e4af2.png)
+
+
+![Screen Recording 2022-12-09 at 11 44 27](https://user-images.githubusercontent.com/24626396/206677685-50c705a1-e20f-4502-a175-ee27f192479a.gif)
+
+we can see the current flow, and how it generates the square wave.
+
+## building the circuit
