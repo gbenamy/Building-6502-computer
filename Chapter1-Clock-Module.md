@@ -27,7 +27,12 @@ Let's start by getting a deeper understanding on the heart of the circuit.
 ## 555 module
 from the data sheet:
 ![555](https://user-images.githubusercontent.com/24626396/182016977-d86b5ea5-1a74-4641-b700-e2ee85a75d9e.png)
-![Screen Shot 2022-07-31 at 11 19 15](https://user-images.githubusercontent.com/24626396/182017112-2332940f-da9b-48ac-b9a1-3e80cf21e467.png)
+
+![Internal Diagram](https://user-images.githubusercontent.com/24626396/182017112-2332940f-da9b-48ac-b9a1-3e80cf21e467.png)
+
+Another more accurate schematic
+![555](https://user-images.githubusercontent.com/24626396/208178341-11153e01-693e-471f-a22e-2dc64b39de3d.jpeg)
+
 
 ## Inside 555
 
