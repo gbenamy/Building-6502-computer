@@ -31,7 +31,7 @@ from the data sheet:
 
 ## Inside 555
 
-I'll simulate the 555 component circuitary to show it's inner behaviur:
+I'll simulate the 555 component circuitary to show it's inner behaviour:
 ### schematics:
 ![Screenshot 2022-12-09 at 12 11 50](https://user-images.githubusercontent.com/24626396/206679648-91a858e8-b57b-4aad-b958-c37ae37e4af2.png)
 
