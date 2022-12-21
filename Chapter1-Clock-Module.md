@@ -43,6 +43,17 @@ I'll simulate the 555 component circuitary to show it's inner behaviour:
 
 ![Screen Recording 2022-12-09 at 11 44 27](https://user-images.githubusercontent.com/24626396/206677685-50c705a1-e20f-4502-a175-ee27f192479a.gif)
 
-we can see the current flow, and how it generates the square wave.
+We can see the current flow, and how it generates the square wave.
 
 ## building the circuit
+
+### Phase 1 - Two resistors: 
+I'll simulate the beardboard design with 555 chip verify
+
+![Screenshot 2022-12-21 at 21 18 25](https://user-images.githubusercontent.com/24626396/208986560-f517ef83-c629-4223-9add-4aebe3c5f42c.png)
+
+![IMG_7347](https://user-images.githubusercontent.com/24626396/208985293-c354f52c-d60b-4cf3-a2e9-6a54753547a1.jpg)
+![circuit 2 resistors](https://user-images.githubusercontent.com/24626396/208985612-d077d0cb-8291-4eb2-ba78-23184bee9093.gif)
+
+It works!
+let's calculate the 
