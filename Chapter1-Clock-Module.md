@@ -56,4 +56,11 @@ I'll simulate the beardboard design with 555 chip verify
 ![circuit 2 resistors](https://user-images.githubusercontent.com/24626396/208985612-d077d0cb-8291-4eb2-ba78-23184bee9093.gif)
 
 It works!
-let's calculate the 
+let's calculate the period time T:
+
+Charging circuit:
+![Screenshot 2022-12-21 at 23 48 17](https://user-images.githubusercontent.com/24626396/209008563-c71a8128-1eb6-49bf-9d85-fe6cff4a0978.png)
+
+Discharging circuit:
+![Screenshot 2022-12-21 at 23 49 18](https://user-images.githubusercontent.com/24626396/209008823-5b20926e-481c-43d9-b37a-a48ad8bef9f1.png)
+
