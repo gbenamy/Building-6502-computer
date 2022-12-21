@@ -64,3 +64,9 @@ Charging circuit:
 Discharging circuit:
 ![Screenshot 2022-12-21 at 23 49 18](https://user-images.githubusercontent.com/24626396/209008823-5b20926e-481c-43d9-b37a-a48ad8bef9f1.png)
 
+In my circuit I have used:
+$$Ra=10^3Ω$$
+
+$$Rb=10^6Ω$$
+
+$$C1=1 \mu F$$
