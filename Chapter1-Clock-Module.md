@@ -28,13 +28,19 @@ Let's start by getting a deeper understanding on the heart of the circuit.
 from the data sheet:
 ![555](https://user-images.githubusercontent.com/24626396/182016977-d86b5ea5-1a74-4641-b700-e2ee85a75d9e.png)
 
+## Inside 555
+
 ![Internal Diagram](https://user-images.githubusercontent.com/24626396/182017112-2332940f-da9b-48ac-b9a1-3e80cf21e467.png)
 
 Another more accurate schematic
 ![555](https://user-images.githubusercontent.com/24626396/208178341-11153e01-693e-471f-a22e-2dc64b39de3d.jpeg)
 
 
-## Inside 555
+
+
+# astable 555 circuit
+
+It is called astable as it constatnly flips between the states.
 
 I'll simulate the 555 component circuitary to show it's inner behaviour:
 ### schematics:
@@ -45,7 +51,7 @@ I'll simulate the 555 component circuitary to show it's inner behaviour:
 
 We can see the current flow, and how it generates the square wave.
 
-## building the circuit
+## 555 astable operation - building the circuit
 
 ### Phase 1 - Two resistors: 
 I'll simulate the beardboard design with 555 chip verify
@@ -56,6 +62,9 @@ I'll simulate the beardboard design with 555 chip verify
 ![circuit 2 resistors](https://user-images.githubusercontent.com/24626396/208985612-d077d0cb-8291-4eb2-ba78-23184bee9093.gif)
 
 It works!
+
+I've added $0.01 \mu F$ capacitor connected to the 555 5th leg and a $0.1 \mu F$ capacitor on the power sorce in order to 'clean' the signal, as recomended in the datasheet. 
+
 let's calculate the period time T:
 
 Charging circuit:
@@ -70,3 +79,19 @@ $$Ra=10^3Ω$$
 $$Rb=10^6Ω$$
 
 $$C1=1 \mu F$$
+
+##TODO: add computation
+
+## Phase 2 - Switching to potentiometer
+In order to be able to adjust the speed of the clock as needed, I'll repleace the resistor with an adjustable one, a potentiometer.
+
+![potentiometer](https://user-images.githubusercontent.com/24626396/209213097-ff0bac2d-1555-4522-aad8-221cbb8383a9.gif)
+
+
+
+
+
+# Monostable 555 circuit
+We may need to control the clock manually, in order to debug, or slow down to better follow the code. 
+
+I will use the 555 monostable operation so that a push on the pushbutton will send one clock pulse.
