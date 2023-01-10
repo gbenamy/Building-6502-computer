@@ -93,5 +93,8 @@ In order to be able to adjust the speed of the clock as needed, I'll repleace th
 
 # Monostable 555 circuit
 We may need to control the clock manually, in order to debug, or slow down to better follow the code. 
+Since a single push on a simple button may triger several 'clocks'
+TODO: ADD A PHOTO OF THE SEVERAL CLOCKS
+I will use the 555 monostable configuration to produce a clean single clock pulse. 
 
-I will use the 555 monostable operation so that a push on the pushbutton will send one clock pulse.
+The debouncing circuit 
