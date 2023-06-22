@@ -106,3 +106,9 @@ I will use the 555 monostable configuration to produce a clean single clock puls
 Let's simulate:
 ![Screen Recording 2023-01-14 at 23 54 232](https://user-images.githubusercontent.com/24626396/212499493-cc04f5cf-cf99-4338-8da0-a125ce3c7b6c.gif)
 
+And the result:
+
+![IMG_8874](https://github.com/gbenamy/Building-6502-computer/assets/24626396/d4e68780-eab4-4a26-b87c-6b6967c78596)
+
+
+
