@@ -126,15 +126,16 @@ On top of the debounced switch, we'll use a little bit of logic to determine the
 
 Using these components:
 
-![image](https://github.com/gbenamy/Building-6502-computer/assets/24626396/681f70c0-1dfd-4c36-9dca-81ccee74139a)
+![image](https://github.com/gbenamy/Building-6502-computer/assets/24626396/681f70c0-1dfd-4c36-9dca-81ccee74139a)                                      
 
-![image](https://github.com/gbenamy/Building-6502-computer/assets/24626396/ff9e9382-120c-4a7d-a47d-f9153ecb1e11)
+![image](https://github.com/gbenamy/Building-6502-computer/assets/24626396/ff9e9382-120c-4a7d-a47d-f9153ecb1e11)                                      
 
-![image](https://github.com/gbenamy/Building-6502-computer/assets/24626396/77f69627-6ffb-4427-8b8f-3d4dd6e387f8)
+![image](https://github.com/gbenamy/Building-6502-computer/assets/24626396/77f69627-6ffb-4427-8b8f-3d4dd6e387f8)                                      
+
+And the result: 
+
+![IMG_8884](https://github.com/gbenamy/Building-6502-computer/assets/24626396/943383c7-42a0-4a84-86c6-0c096757ebd4)
 
 
-
-
-
-
+![IMG_8885u](https://github.com/gbenamy/Building-6502-computer/assets/24626396/a1dbdb08-08e1-4a9d-bfd5-0bc8d85125e1)
 
