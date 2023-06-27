@@ -112,3 +112,29 @@ And the result:
 
 
 
+## Phase 3 - Switching between the modes
+In order to be able to conveniently switch between the manual clock and oscillating clock, I'll use a switch.
+
+I'll use another 555 timer to debounce the switch to avoid the bouncing issue as in phase 2.
+We can use the SR latch as the debouncer:
+
+![image](https://github.com/gbenamy/Building-6502-computer/assets/24626396/eaebf4dd-bd93-4bbe-9e2c-b485a3a38b3c)
+
+On top of the debounced switch, we'll use a little bit of logic to determine the output:
+
+![image](https://github.com/gbenamy/Building-6502-computer/assets/24626396/45653af8-8b7f-4131-92e7-09d68f6356ea)
+
+Using these components:
+
+![image](https://github.com/gbenamy/Building-6502-computer/assets/24626396/681f70c0-1dfd-4c36-9dca-81ccee74139a)
+
+![image](https://github.com/gbenamy/Building-6502-computer/assets/24626396/ff9e9382-120c-4a7d-a47d-f9153ecb1e11)
+
+![image](https://github.com/gbenamy/Building-6502-computer/assets/24626396/77f69627-6ffb-4427-8b8f-3d4dd6e387f8)
+
+
+
+
+
+
+
