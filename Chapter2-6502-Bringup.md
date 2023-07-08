@@ -211,7 +211,7 @@ Let's see
 
 We can see that after reading the address from FFFC&FFFD the mictoprocessor jumps to that address and start executing opcodes.
 
-I've manually tied 'ea' to the data pins to demonstrate the reset as 'ea' is the opcode for 'no operation'
+I've manually hardwired 'ea' to the data pins to demonstrate the reset as 'ea' is the opcode for 'no operation'
 
 ![Image](https://github.com/gbenamy/Building-6502-computer/assets/24626396/0ad42fc6-6666-482f-a6ae-e7987fe0db3a)
 
