@@ -197,4 +197,31 @@ void loop() {
 
 
 
+### Reset sequence
+
+Let's take a look on the reset phase:
+
+![image](https://github.com/gbenamy/Building-6502-computer/assets/24626396/287083ba-7e06-48e9-b82e-c29e17bb88bf)
+
+The reset sequence lasts 7 clocks and the program counter is loaded from FFFC (low byte) FFFD (high byte).
+
+Let's see
+
+![image](https://github.com/gbenamy/Building-6502-computer/assets/24626396/7cb875be-8e5b-4d09-9995-b4080a1e4dd8)
+
+We can see that after reading the address from FFFC&FFFD the mictoprocessor jumps to that address and start executing opcodes.
+
+I've manually tied 'ea' to the data pins to demonstrate the reset as 'ea' is the opcode for 'no operation'
+
+![Image](https://github.com/gbenamy/Building-6502-computer/assets/24626396/0ad42fc6-6666-482f-a6ae-e7987fe0db3a)
+
+![image](https://github.com/gbenamy/Building-6502-computer/assets/24626396/7456b3a9-0792-4479-969c-d9ec64d21935)
+
+
+
+
+
+
+
+
 
