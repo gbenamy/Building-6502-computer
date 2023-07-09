@@ -25,9 +25,14 @@ Since the chip, after the reset sequence as we saw in the previous chapter, is l
 
 We'll choose the higher half 0x0800-0xFFFF.
 
-The chip A15, chip address MSB, will be connected vi inverter (using NAND gate) to the ROM CE, and will enable the ROM (as it is always '1' in the higher address half)
+The chip A15, chip address MSB, will be connected vi inverter (using NAND gate) to the ROM **!CE**, and will enable the ROM (as it is always '1' in the higher address half)
 
 ![image](https://github.com/gbenamy/Building-6502-computer/assets/24626396/658c2c9a-9dff-45f9-af6b-fdfc0444d699)
+
+
+* **!WE** - Will be tied to high, as we only want to read from the ROM
+* **!OE** - Will be tied to low, as we want the outout to always be enabled as long as the chip is enabled (**!CE**)
+* 
 
 
 
