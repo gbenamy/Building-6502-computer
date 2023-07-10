@@ -25,14 +25,34 @@ Since the chip, after the reset sequence as we saw in the previous chapter, is l
 
 We'll choose the higher half 0x0800-0xFFFF.
 
-The chip A15, chip address MSB, will be connected vi inverter (using NAND gate) to the ROM **!CE**, and will enable the ROM (as it is always '1' in the higher address half)
+The chip **A15**, chip address MSB, will be connected vi inverter (using NAND gate) to the ROM **!CE**, and will enable the ROM (as it is always '1' in the higher address half)
 
 ![image](https://github.com/gbenamy/Building-6502-computer/assets/24626396/658c2c9a-9dff-45f9-af6b-fdfc0444d699)
 
 
 * **!WE** - Will be tied to high, as we only want to read from the ROM
 * **!OE** - Will be tied to low, as we want the outout to always be enabled as long as the chip is enabled (**!CE**)
-* 
+* **I/O0-I/O7** - Will be connected to the microcontroller **D0-D7**
+* **A0-14** - Will be connected to the mictrocontroller **A0-A14**
+
+### ROM and connections test
+
+I'll fill the ROM with Oxea ,the 'no operation' opcode, and we'll see if we get the same behaviour as when I hardwired 'ea':
+
+Using python
+
+```python
+rom = bytearray([0xea]*32768)
+with open ("rom.bin", "wb") as file:
+    file.write(rom)
+```
+
+Let's validate
+
+<img width="458" alt="image" src="https://github.com/gbenamy/Building-6502-computer/assets/24626396/6e8a75c5-9e1c-459d-a6ed-49494ab955ce">
+
+
+
 
 
 
