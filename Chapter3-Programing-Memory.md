@@ -51,6 +51,54 @@ Let's validate
 
 <img width="458" alt="image" src="https://github.com/gbenamy/Building-6502-computer/assets/24626396/6e8a75c5-9e1c-459d-a6ed-49494ab955ce">
 
+Let's connect and see if it is the same behaviour:
+
+We can see some flunctuations, I'll speed up the clock so it will be more clear
+
+https://github.com/gbenamy/Building-6502-computer/assets/24626396/4adbdacb-aafd-4e38-80c8-19e9e38e0653
+
+Some data lines are fluctuating occasionally, seems like D1,D3,D5.
+
+
+
+
+### The bad news
+
+After two evenings invastigating the issue, and reconnecting all address/data conectors, re-flushing the rom, changing it to a different starting address.
+the VCC leg of the ROM has broken..
+Soldering it would not help.
+
+A quick note, the chip legs are relatively strong, but once dent (due to improper pulling out the chip from the breadboard) and straighten it,
+it becomes very fragile.
+
+![Image](https://github.com/gbenamy/Building-6502-computer/assets/24626396/46fb16a8-72cc-4689-b88f-f8bd2464856f)
+
+
+
+I've ordered a new chip (will arrive in 2-3 weeks)
+
+For now I'll improvise and use a mush smaller EEPROM I got:
+
+### Improvisation
+
+AT28C16
+
+![image](https://github.com/gbenamy/Building-6502-computer/assets/24626396/3b86e5fe-db69-4ac4-8a9b-c2d89b98b52a)
+
+![image](https://github.com/gbenamy/Building-6502-computer/assets/24626396/a519927b-9d94-49b8-bde5-c39215881c03)
+
+
+it's a 2K byte EEPROM.
+
+Let's flush 'ea'
+
+```python
+rom = bytearray([0xea]*2048)
+with open ("rom.bin", "wb") as file:
+    file.write(rom)
+```
+
+
 
 
 
