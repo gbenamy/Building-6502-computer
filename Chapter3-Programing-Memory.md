@@ -162,6 +162,17 @@ with open ("rom.bin", "wb") as file:
     file.write(rom)
 ```
 
+![image](https://github.com/gbenamy/Building-6502-computer/assets/24626396/cd63b2ed-721d-4070-88af-41d62435fb9c)
+
+
+
+And it's working!
+
+We can see the reboot sequence, loading the address 0xF800 and starting to execute the 'ea' from that point
+
+![image](https://github.com/gbenamy/Building-6502-computer/assets/24626396/6c69503a-d8c2-44da-bc40-3910775d46f2)
+
+
 
 
 
