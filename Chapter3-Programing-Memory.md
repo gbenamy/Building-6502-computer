@@ -144,8 +144,25 @@ I'll add this logic for A11-A15 on the 6502 microchip connected to the EEPROM CE
 
 
 AND gates: 
+
 DM74LS08
+
 ![image](https://github.com/gbenamy/Building-6502-computer/assets/24626396/fc844fe8-fdaf-46c8-aba6-7163d8a2e97f)
+
+I'll flush the EEPROM with 'ea', except for 0xFFFC 0xFFFD as i'll use the first address that exist in the new EEPROM address mapping: 0xF800
+the 11 address bytes of 0xFFFC and 0xFFFD will be 0x7FC 0x7FD, as we flush it on 2K byte rom with 11 address pins.
+
+```python
+rom = bytearray([0xea]*2048)
+
+rom[0x7fc] = 0x00
+rom[0x7fd] = 0xf8
+
+with open ("rom.bin", "wb") as file:
+    file.write(rom)
+```
+
+
 
 
 
