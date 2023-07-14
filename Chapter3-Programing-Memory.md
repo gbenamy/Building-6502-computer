@@ -39,6 +39,8 @@ The chip **A15**, chip address MSB, will be connected vi inverter (using NAND ga
 
 I'll fill the ROM with Oxea ,the 'no operation' opcode, and we'll see if we get the same behaviour as when I hardwired 'ea':
 
+
+
 Using python
 
 ```python
@@ -90,6 +92,11 @@ AT28C16
 
 it's a 2K byte EEPROM.
 
+I've created a little 'handle' so it won't happen again 😁
+
+![IMG_9001 Medium](https://github.com/gbenamy/Building-6502-computer/assets/24626396/6e59ed75-bd90-41d5-8a75-6ccd2bce9519)
+
+
 Let's flush 'ea'
 
 ```python
@@ -98,8 +105,40 @@ with open ("rom.bin", "wb") as file:
     file.write(rom)
 ```
 
+![image](https://github.com/gbenamy/Building-6502-computer/assets/24626396/18d44fca-d0df-4ae3-b9ff-075a17a7c70b)
+
+Well, it seems that the programmer TL866+ has an issue writing to the AT28C16
+![image](https://github.com/gbenamy/Building-6502-computer/assets/24626396/d6f48e1e-890c-4aa6-a10e-d1a81b2c244b)
+
+Searching online suggested to lower the writing speed. 
+
+https://www.reddit.com/r/beneater/comments/dck8ye/atmel_28c16_programming_issues_with_xgecu_tl866/
+
+This guy have found a solution to make it write slower using a different model in the command
+
+and it worked!
+
+![image](https://github.com/gbenamy/Building-6502-computer/assets/24626396/dc0896ac-73e8-4932-9768-471015e00e5b)
 
 
+As we can see, the new EEPROM has 11 address pins, meaning 2K byte.
+
+We need to decide were to 'map' these 2K.
+
+As before, because the the 6502 microchip loads FFFC and FFFD as the start of the program,
+
+I'll map the 2k ROM to the last 1/32 of the addresses supported by the 6502 microchip:
+
+```
+1111 1000 0000 0000   -  F800
+```
+till
+```
+1111 1111 1111 1111   -  FFFF
+```
+
+I'll add this logic for A11-A15 on the 6502 microchip connected to the EEPROM CEB
+![image](https://github.com/gbenamy/Building-6502-computer/assets/24626396/0f517054-2e1d-4bca-ac13-584a43645daf)
 
 
 
