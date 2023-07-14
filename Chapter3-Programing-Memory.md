@@ -143,7 +143,9 @@ I'll add this logic for A11-A15 on the 6502 microchip connected to the EEPROM CE
 
 
 
-
+AND gates: 
+DM74LS08
+![image](https://github.com/gbenamy/Building-6502-computer/assets/24626396/fc844fe8-fdaf-46c8-aba6-7163d8a2e97f)
 
 
 
