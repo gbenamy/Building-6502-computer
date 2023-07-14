@@ -173,6 +173,7 @@ We can see the reboot sequence, loading the address 0xF800 and starting to execu
 ![image](https://github.com/gbenamy/Building-6502-computer/assets/24626396/6c69503a-d8c2-44da-bc40-3910775d46f2)
 
 
+![IMG_9007](https://github.com/gbenamy/Building-6502-computer/assets/24626396/0e5c8571-cc7d-4123-a742-2739153c771d)
 
 
 
