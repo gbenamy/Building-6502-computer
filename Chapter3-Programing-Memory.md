@@ -183,4 +183,30 @@ In the hex converter the plan was to short the inputs with A15 and pass the outp
 I've accidentally short one of the input and the output instead..
 
 
+## Adding RAM
+
+In order to more interesting things with the 6502 microchip other than 'ea',
+we need to connect the chip to a RAM chip to store and load variables
+
+We'll be using W65C22 Versatile Interface Adapter (VIA) which is built to work with our 6502 chip.
+
+### pin function
+![image](https://github.com/gbenamy/Building-6502-computer/assets/24626396/1f59a6e6-d574-447f-aa67-3d305c0ea5ec)
+
+![image](https://github.com/gbenamy/Building-6502-computer/assets/24626396/3b3cbc95-3d7f-48a1-b1be-8c6bc3d5859f)
+
+
+### Address space mapping 
+
+First, we need to decide to which 6502 address space the chip will be mapped, meaning 
+which addresses will enable the RAM and will 'listen' to the bus.
+
+Both CS2B and CSA should be enabled in order for the RAM to be enabled.
+
+
+
+
+
+
+
 
