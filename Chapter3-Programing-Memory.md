@@ -190,6 +190,9 @@ we need to connect the chip to a RAM chip to store and load variables
 
 We'll be using W65C22 Versatile Interface Adapter (VIA) which is built to work with our 6502 chip.
 
+![Image 2](https://github.com/gbenamy/Building-6502-computer/assets/24626396/12f23454-b5bf-4769-b9fe-18b10e731569)
+
+
 ### pin function
 ![image](https://github.com/gbenamy/Building-6502-computer/assets/24626396/1f59a6e6-d574-447f-aa67-3d305c0ea5ec)
 
