@@ -201,7 +201,28 @@ We'll be using W65C22 Versatile Interface Adapter (VIA) which is built to work w
 First, we need to decide to which 6502 address space the chip will be mapped, meaning 
 which addresses will enable the RAM and will 'listen' to the bus.
 
-Both CS2B and CSA should be enabled in order for the RAM to be enabled.
+Both CS2B and CS1 should be enabled in order for the RAM to be enabled.
+
+I'll use the logic gates that already exist on the board: 
+
+I have 1 free AND gate and 3 free NAND gates.
+
+We'll after thinking it a little bit, I won't need the 'free' gates.
+
+I'll map the chip to address 0x6000 and use A15,A14,A13 to chip select it:
+
+```
+0110 0000 0000 0000   -  0x6000
+till
+0111 1111 1111 1111   -  0x7FFF
+```
+
+I'll connect A15 directly to CS2B, and the output of A13 && A14, which I already have to CS1.
+
+This will assure that only when A15,A14,A13 will be 011, the chip will be selected.
+
+Let's start connecting
+
 
 
 
