@@ -175,6 +175,12 @@ We can see the reboot sequence, loading the address 0xF800 and starting to execu
 
 ![IMG_9007](https://github.com/gbenamy/Building-6502-computer/assets/24626396/0e5c8571-cc7d-4123-a742-2739153c771d)
 
+### The good news
+
+While replacing all the setup for the new EEPROM, I have found the root cause of the issue i've experienced:
+
+In the hex converter the plan was to short the inputs with A15 and pass the output to ROM CEB pin.
+I've accidentally short one of the input and the output instead..
 
 
 
