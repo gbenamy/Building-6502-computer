@@ -226,7 +226,9 @@ This will assure that only when A15,A14,A13 will be 011, the chip will be select
 
 Let's start connecting.
 
-So I've connected CS1, CS2B, the clock-PHI2, the read-write RWB, the reset pin RESB to the same 6502 reset pin, and the Data pins D0-D7
+So I've connected CS1, CS2B, the clock-PHI2, the read-write RWB, the reset pin RESB to the same 6502 reset pin, and the Data pins D0-D7.
+
+
 
 
 
