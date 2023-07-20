@@ -297,3 +297,7 @@ print (f"There are {2048 - len(code)} bytes left")
 
 <img width="626" alt="image" src="https://github.com/gbenamy/Building-6502-computer/assets/24626396/7187a703-3edd-404c-9e1e-8287edf1017b">
 
+Or in a more understandable way:
+
+<img width="756" alt="image" src="https://github.com/gbenamy/Building-6502-computer/assets/24626396/c9795cdb-f584-47da-a844-288225203ddb">
+
