@@ -301,3 +301,14 @@ Or in a more understandable way:
 
 <img width="756" alt="image" src="https://github.com/gbenamy/Building-6502-computer/assets/24626396/c9795cdb-f584-47da-a844-288225203ddb">
 
+###The result:
+
+https://github.com/gbenamy/Building-6502-computer/assets/24626396/979555ed-d49e-46a8-b88b-3be58a535315
+
+
+
+
+https://github.com/gbenamy/Building-6502-computer/assets/24626396/8783c473-9f49-43bd-ba31-7309dcc1edf8
+
+
+
