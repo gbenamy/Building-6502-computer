@@ -77,6 +77,9 @@ it becomes very fragile.
 
 
 
+
+
+
 I've ordered a new chip (will arrive in 2-3 weeks)
 
 For now I'll improvise and use a mush smaller EEPROM I got:
@@ -228,8 +231,21 @@ Let's start connecting.
 
 So I've connected CS1, CS2B, the clock-PHI2, the read-write RWB, the reset pin RESB to the same 6502 reset pin, and the Data pins D0-D7.
 
+There are 4 more pins we should handle:
 
+the RAM has 16 registers, registers A and B can be lathced out as output (or function as input).
 
+The 16 registers are being selected by RS0-RS3 (Register Select) pins:
+
+![image](https://github.com/gbenamy/Building-6502-computer/assets/24626396/47c96127-0864-4f54-a59f-e943ceb6838b)
+
+I'll connect the 6502 lower address bytes A0-A3 to RS0-RS3
+
+so to select register A, the RS should be 0000
+and for B 0001
+
+The Data direction, which let us define which of the registers are output and which are input,
+are in 0011 for A and 0010 for B.
 
 
 
