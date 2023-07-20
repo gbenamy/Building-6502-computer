@@ -247,10 +247,53 @@ and for B 0001
 The Data direction, which let us define which of the registers are output and which are input,
 are in 0011 for A and 0010 for B.
 
+### The Code
+
+So let's write a code to be loaded to register B of the RAM.
+I've connected LEDs to the register B pins (PB0-PB7) in order to see the output.
+
+First we need to select register B and set all the pins as output, all '1':
+![image](https://github.com/gbenamy/Building-6502-computer/assets/24626396/4083074f-6004-401b-b095-ace118fc3475)
+
+So we'll need to write 'FF' to address 6002 (which will select register B and set the pins to output):
+
+![image](https://github.com/gbenamy/Building-6502-computer/assets/24626396/47782193-6ca5-454f-aef6-11fa79be685e)
+
+I'll load 6502 register A with a number: opcode A9 with 0xFF
+and then write the content of A to address 6002: opcode 8D
+
+and now we can write to register B at address 6000
+
+I'll toggle between 0x55 to 0xAA by jumping (opcode 0x4c) to address 0xf805.
+
+```python
+
+code = bytearray([
+    0xa9,0xff,       #lda 0xff
+    0x8d,0x02,0x60,  #sta 0x6002
+
+    0xa9,0x55,       #lda 0x55
+    0x8d,0x00,0x60,  #sta 0x6000
+
+    0xa9,0xaa,       #lda 0xaa
+    0x8d,0x00,0x60,  #sta 0x6000
+
+    0x4c,0x05,0xf8,  #jmp 0xf805
+])
 
 
 
 
+rom = bytearray([0xea]*(2048 - len(code)))
 
+rom[0x7fc] = 0x00
+rom[0x7fd] = 0xf8
 
+with open ("rom.bin", "wb") as file:
+    file.write(rom)
+
+print (f"There are {2048 - len(code)} bytes left")
+```
+
+<img width="626" alt="image" src="https://github.com/gbenamy/Building-6502-computer/assets/24626396/7187a703-3edd-404c-9e1e-8287edf1017b">
 
