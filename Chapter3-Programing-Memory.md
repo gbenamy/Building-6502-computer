@@ -1,4 +1,4 @@
-### Chapter3-Programing-Memory.md
+### Chapter3-Programing-Memory
 
 So in order to write more interesting code than the hardwired nop ('ea' - no operation),
 
@@ -301,7 +301,7 @@ Or in a more understandable way:
 
 <img width="756" alt="image" src="https://github.com/gbenamy/Building-6502-computer/assets/24626396/c9795cdb-f584-47da-a844-288225203ddb">
 
-###The result:
+### The result:
 
 https://github.com/gbenamy/Building-6502-computer/assets/24626396/979555ed-d49e-46a8-b88b-3be58a535315
 
@@ -309,6 +309,52 @@ https://github.com/gbenamy/Building-6502-computer/assets/24626396/979555ed-d49e-
 
 
 https://github.com/gbenamy/Building-6502-computer/assets/24626396/8783c473-9f49-43bd-ba31-7309dcc1edf8
+
+
+### Moving to Assembler
+---
+It won't be as convenient to manually type the instructions to the micro processor (OxA9 OxFF Ox8d...)
+Instead I'll in assembly and use assembler to convert it to machine code:
+
+http://www.compilers.de/vasm.html
+
+The command:
+
+(vasm is my alias to the compiled vasm for CPU=6502 
+
+```shell
+#vasm -Fbin -dotdir <Assembly.s>
+```
+
+```asm
+  .org $f800
+
+reset:
+  lda #$FF
+  sta $6002
+
+loop:
+  lda #$55
+  sta $6000
+
+  lda #$aa
+  sta $6000
+
+  jmp loop
+
+  .org $fffc
+  .word reset
+  .word $0000
+```
+
+And got the same result: 
+
+![image](https://github.com/gbenamy/Building-6502-computer/assets/24626396/0127f166-188c-487f-827a-6e6ca8a5908d)
+
+
+
+
+
 
 
 
