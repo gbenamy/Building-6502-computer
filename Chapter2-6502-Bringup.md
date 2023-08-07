@@ -1,5 +1,5 @@
 
-# Chapter 1 - 6502 Bring-up
+# Chapter 2 - 6502 Bring-up
 
 ![IMG_8886](https://github.com/gbenamy/Building-6502-computer/assets/24626396/589755c5-75be-446e-aa2f-de8a301faca4)
 
