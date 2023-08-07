@@ -1,4 +1,4 @@
-# Chapter3-Programing-Memory
+# Chapter3 - Programing-Memory
 
 So in order to write more interesting code than the hardwired nop ('ea' - no operation),
 
