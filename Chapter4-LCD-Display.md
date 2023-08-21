@@ -108,6 +108,16 @@ Parameters:
   sta PORTA ; 
 ```
 
+And we can now write all the letters for "Hello, World!" in a one big duplicate code!
+
+
+After running the assembler
+
+<img width="809" alt="image" src="https://github.com/gbenamy/Building-6502-computer/assets/24626396/b536d2de-10f8-4e72-8010-f15b18c9e4a5">
+
+We can see the letters there
+
+
 
 
 
