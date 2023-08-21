@@ -56,21 +56,21 @@ Parameters:
 ```asm
 ;command - set display to 8bit mode, 2lines and 5x8 font
 
-  lda #00111000 ; set display to 8bit mode, 2lines and 5x8 font
+  lda %00111000 ; set display to 8bit mode, 2lines and 5x8 font
   sta PORTB
 ```
 
 ```asm
 ;command - set display on, cursor on, blink off
 
-  lda #00001110 ; set display on, cursor on, blink off
+  lda %00001110 ; set display on, cursor on, blink off
   sta PORTB
 ```
 
 ```asm
 ;command - shift cursor right when writing, no display shift 
 
-  lda #00000110 ; shift cursor right when writing, no display shift 
+  lda %00000110 ; shift cursor right when writing, no display shift 
   sta PORTB
 ```
 
@@ -107,7 +107,6 @@ Parameters:
   lda #RS
   sta PORTA ; 
 ```
-
 
 
 
