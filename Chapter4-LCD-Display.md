@@ -38,5 +38,81 @@ In case the RS is 1 and the RWB is 0 (writing) - We are sending 'data' thp the d
 
 ![image](https://github.com/gbenamy/Building-6502-computer/assets/24626396/79710a20-5818-4b98-a028-6102f08ce418)
 
+### The Commands
+
+The commands are determined by the leading '1' followed by parameters: 
+
+![image](https://github.com/gbenamy/Building-6502-computer/assets/24626396/b2ebdb2c-01d1-433c-8262-3a54bd9329aa)
+
+Parameters: 
+
+![image](https://github.com/gbenamy/Building-6502-computer/assets/24626396/7b27e676-16c3-4fb4-aa7a-53fdc2871518)
+
+
+ ### Start Writing
+
+ #### Key routines
+
+```asm
+;command - set display to 8bit mode, 2lines and 5x8 font
+
+  lda #00111000 ; set display to 8bit mode, 2lines and 5x8 font
+  sta PORTB
+```
+
+```asm
+;command - set display on, cursor on, blink off
+
+  lda #00001110 ; set display on, cursor on, blink off
+  sta PORTB
+```
+
+```asm
+;command - shift cursor right when writing, no display shift 
+
+  lda #00000110 ; shift cursor right when writing, no display shift 
+  sta PORTB
+```
+
+
+```asm
+  ;sending command routine
+  ;keeping RS and RWB low while toggling E on/off
+
+  lda #0
+  sta PORTA ; clear E,RWB,RS 
+
+  lda #E ; set E bit to send
+  sta PORTA
+
+  lda #0
+  sta PORTA ; clear E,RWB,RS 
+```
+
+```asm
+; writing letter - H
+  lda #"H"
+  sta PORTB
+```
+
+```asm
+ ;sending letter routine
+  ;keeping RS high while toggling E on/off
+  lda #RS
+  sta PORTA ;  
+
+  lda #(E | RS) ;
+  sta PORTA
+
+  lda #RS
+  sta PORTA ; 
+```
+
+
+
+
+
+
+ 
 
 
