@@ -110,6 +110,8 @@ Parameters:
 
 And we can now write all the letters for "Hello, World!" in a one big duplicate code!
 
+(see Assem-lcd.s)
+
 
 After running the assembler
 
