@@ -1,4 +1,4 @@
-# Chapter 3 - LCD Display
+# Chapter 4 - LCD Display
 
 ---
 
@@ -90,7 +90,7 @@ Parameters:
 ```
 
 ```asm
-; writing letter - H
+; writing a letter - H
   lda #"H"
   sta PORTB
 ```
