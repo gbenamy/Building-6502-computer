@@ -117,8 +117,15 @@ After running the assembler
 
 <img width="809" alt="image" src="https://github.com/gbenamy/Building-6502-computer/assets/24626396/b536d2de-10f8-4e72-8010-f15b18c9e4a5">
 
+
 We can see the letters there
 
+### And the result 
+
+
+In the next chapter I'll use stack to improve the code and remove the redundant 'functions' calls
+
+![IMG_9212](https://github.com/gbenamy/Building-6502-computer/assets/24626396/c82dc457-b82d-47f4-9e27-83724ea63728)
 
 
 
