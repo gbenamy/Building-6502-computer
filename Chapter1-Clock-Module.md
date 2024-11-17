@@ -63,7 +63,7 @@ I'll simulate the beardboard design with 555 chip verify
 
 It works!
 
-I've added $0.01 \mu F$ capacitor connected to the 555 5th leg and a $0.1 \mu F$ capacitor on the power sorce in order to 'clean' the signal, as recomended in the datasheet. 
+I’ve connected a $0.01 \mu F$ capacitor to the 555’s fifth leg and a $0.1 \mu F$ capacitor on the power source to ‘clean’ the signal, as recommended in the datasheet. 
 
 let's calculate the period time T:
 
