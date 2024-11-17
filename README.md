@@ -15,8 +15,7 @@ I'll be following Ben Eater's youtube [playlist](https://www.youtube.com/watch?v
 
 The classic micro processor that revolutionized the personal computer industry with the groundbreaking Apple II computer! ![appleII](https://images.all-free-download.com/images/graphiclarge/apple_ii_564638.jpg)
 
-The **purpose** of this project to me is to gain a deeper understanding on computer internals from top to buttom and eliminate the _"magic"_ 
-------
+The primary objective of this project is to gain a comprehensive understanding of computer internals, from the top to the bottom, and eliminate the notion of “magic.” 
 ## unboxing!
 pretty exiting :smiley: ![Image](https://user-images.githubusercontent.com/24626396/181089938-741192fd-5eaa-4490-9b9f-cbb9de933f87.jpeg)
 
