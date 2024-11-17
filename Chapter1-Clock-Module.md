@@ -4,10 +4,10 @@
 
 Following Ben Eater's [clock module](https://www.youtube.com/watch?v=kRlSFm519Bo) youtube and [kit](https://eater.net/6502)
 
-The computer’s clock is used to synchronize all operations. 
-This clock is based on the popular 555 timer IC.
+The computer’s clock serves as the synchronization mechanism for all operations.
+This clock is based on the widely recognized 555 timer integrated circuit (IC).
 
-The clock is adjustable-speed (from less than 1Hz to a few hundred Hz). The clock can also be put into a manual mode where you push a button to advance each clock cycle. This will be a really useful to take things slowly and realy follow the opcodes execuitions.
+The clock is adjustable-speed, ranging from less than 1Hz to a few hundred Hz. Additionally, it offers a manual mode where pressing the button advances each clock cycle. This feature will be particularly useful for taking things slowly and closely observing the execution of opcodes.
 
 
 ## The Final Circuit:
