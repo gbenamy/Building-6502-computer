@@ -22,7 +22,7 @@ The clock is adjustable-speed, ranging from less than 1Hz to a few hundred Hz. A
 
 ---
 
-Let's start by getting a deeper understanding on the heart of the circuit.
+Let’s begin by gaining a more comprehensive understanding of the core components of the circuit.
 
 ## 555 module
 from the data sheet:
@@ -32,7 +32,7 @@ from the data sheet:
 
 ![Internal Diagram](https://user-images.githubusercontent.com/24626396/182017112-2332940f-da9b-48ac-b9a1-3e80cf21e467.png)
 
-Another more accurate schematic
+A more accurate schematic is provided.
 ![555](https://user-images.githubusercontent.com/24626396/208178341-11153e01-693e-471f-a22e-2dc64b39de3d.jpeg)
 
 
@@ -49,7 +49,7 @@ I'll simulate the 555 component circuitary to show it's inner behaviour:
 
 ![Screen Recording 2022-12-09 at 11 44 27](https://user-images.githubusercontent.com/24626396/206677685-50c705a1-e20f-4502-a175-ee27f192479a.gif)
 
-We can see the current flow, and how it generates the square wave.
+We can observe the current flow and how it generates the square wave.
 
 ## 555 astable operation - building the circuit
 
