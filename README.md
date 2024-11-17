@@ -15,7 +15,7 @@ I'll be following Ben Eater's youtube [playlist](https://www.youtube.com/watch?v
 
 the classic micro processor that started the pesonal computer revolution with the tremendous apple II computer! ![appleII](https://images.all-free-download.com/images/graphiclarge/apple_ii_564638.jpg)
 
- > The **purpose** of this project to me is to gain a deeper  understanding on computer internals from top to buttom and eliminate the _"magic"_ 
+AThe **purpose** of this project to me is to gain a deeper understanding on computer internals from top to buttom and eliminate the _"magic"_ 
 ------
 ## unboxing!
 pretty exiting :smiley: ![Image](https://user-images.githubusercontent.com/24626396/181089938-741192fd-5eaa-4490-9b9f-cbb9de933f87.jpeg)
